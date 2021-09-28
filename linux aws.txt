@@ -1,0 +1,16 @@
+1.How to EFS Package install amazon linux and rhel linxu
+sudo yum install -y amazon-efs-utils
+
+2. Create root user create below directory name
+sudo mkdir efs
+
+3.check the directory succesful created or not
+cd efs
+
+4. Before mounting EFS Files system id added to below fstab path location
+
+vi /etc/fstab
+
+5. mount efs file system to efs root directory
+
+sudo mount -t efs  f235akdkdk:/ efs
